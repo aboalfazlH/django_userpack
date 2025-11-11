@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "django_userpack"
+version = "0.1.0"
+description = "A powerful and extendable Django user system with advanced fields, admin, and authentication features."
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+
+authors = [
+  { name = "AboalfazlH" }
+]
+
+keywords = [
+  "django",
+  "auth",
+  "user",
+  "custom user model",
+  "django user",
+  "django userpack"
+]
+
+dependencies = [
+  "django>=4.2",
+  "Pillow>=9.0",                # For image fields
+  "djangorestframework>=3.14",  # For API serializers (optional)
+  "django-allauth>=0.63",       # For Google/GitHub login support
+]
+
+[project.urls]
+Homepage = "https://github.com/aboalfazlH/django_userpack"
+Repository = "https://github.com/aboalfazl/django_userpack"
+Documentation = "https://pypi.org/project/django_userpack/"
+
+[tool.setuptools.packages.find]
+include = ["django_userpack*"]
