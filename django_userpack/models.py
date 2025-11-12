@@ -22,7 +22,6 @@ class AdvancedBaseUser(AbstractUser):
     
     def get_short_name(self):
         return f"{self.first_name}"
-    
     def get_advanced_name(self):
         return f"{self.first_name} {self.last_name}-{self.short_bio}"
 
