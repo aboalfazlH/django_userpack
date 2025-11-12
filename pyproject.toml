@@ -25,9 +25,7 @@ keywords = [
 
 dependencies = [
   "django>=4.2",
-  "Pillow>=9.0",                # For image fields
-  "djangorestframework>=3.14",  # For API serializers (optional)
-  "django-allauth>=0.63",       # For Google/GitHub login support
+  "Pillow>=9.0",
 ]
 
 [project.urls]
